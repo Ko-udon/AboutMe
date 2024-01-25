@@ -39,4 +39,4 @@ jobs:
             
             source /home/ubuntu/venv/bin/activate
             pip install -r requirements.txt
-            sudo systemctl restart aboutme.service
+            sudo systemctl restart resume.service
