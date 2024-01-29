@@ -18,6 +18,7 @@ class Project(models.Model):
     category = models.CharField(max_length=32, choices=CATEGORY_CHOICES)
     start_date = models.DateField()
     end_date = models.DateField()
+    git_url = models.URLField(null=True, blank=True)
     deploy_url = models.URLField(null=True, blank=True)
     tech_stack = models.CharField(max_length=255)
     title = models.CharField(max_length=255)

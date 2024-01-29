@@ -119,7 +119,10 @@
               <ul>
                 <li><strong>Category</strong>: {{ project.category }}</li>
                 <li><strong>Project date</strong>: {{ project.start_date }} ~ {{ project.end_date }}</li>
-                <li><strong>Github URL</strong>: <a href="http://43.201.110.14">Maple-Diary</a></li>
+                <li><strong>Github URL</strong>: <a href={{ project.git_url }}>{{ title }}-git</a></li>
+                {% if project.deploy_url %}
+                  <li><strong>Deploy URL</strong>: <a href={{ project.deploy_url }}>{{ title }}-deploy</a></li>
+                {% endif %}
                 <li><strong>Stacks</strong>: {{ project.tech_stack }}</li>
               </ul>
             </div>
