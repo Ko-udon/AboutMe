@@ -21,7 +21,8 @@ SECRET_KEY = env("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env("DEBUG")
 
-ALLOWED_HOSTS = ['*']
+STATIC_IP = env("STATIC_IP")
+ALLOWED_HOSTS = [STATIC_IP, 'koudon.kro.kr']
 
 
 # Application definition
